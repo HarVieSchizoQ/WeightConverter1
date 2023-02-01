@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Courier, monospace;
+}
+#header{
+    background-color: grey;
+}
+
+#head-part {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 60px;
+}
+
+#head-part h1 {
+    font-size: 50px;
+}
+
+#head-part input {
+    width: 600px;
+    height: 40px;
+    color:  black;
+    font-size: 20px;
+}
+
+#head-part input::placeholder {
+    color:  grey;
+    font-size: 20px;
+}
+
+#head-part button {
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#body-part {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#body-part input {
+    width: 600px;
+    height: 80px;
+    border-radius: 5px;
+    border: 0px;
+    color:  white;
+    font-size: 30px;
+}
+
+#body-part input:nth-child(1) {
+    background-color: rgb(24, 72, 194);
+}
+
+#body-part input:nth-child(2) {
+    background-color: rgb(8, 183, 37);
+}
+
+#body-part input:nth-child(3) {
+    background-color: rgb(229, 47, 40);
+}
+
+#header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::placeholder {
+    font-size: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 660px) {
+    
+    #head-part h1 {
+        font-size: 40px;
+    }
+    #head-part input {
+        width: 450px;
+    }
+
+    #body-part input {
+        width: 450px;
+    }
+}
